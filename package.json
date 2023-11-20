@@ -49,5 +49,11 @@
     "@types/bcrypt": "^5.0.0",
     "@types/lodash": "^4.14.194",
     "prisma": "^4.13.0"
+
+    },
+    "browser": {
+      "fs": false,
+      "os": false,
+      "path": false
   }
 }
