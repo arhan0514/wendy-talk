@@ -15,9 +15,12 @@ const getCurrentUser = async () => {
       }
     });
 
-    return currentUser || null;
-  } catch (error) {
-    console.error("Error while getting current user:", error);
+    if (!currentUser) {
+      return null;
+    }
+
+    return currentUser;
+  } catch (error: any) {
     return null;
   }
 };
